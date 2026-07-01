@@ -3,34 +3,75 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>معرض ريـ🦋ـري</title>
+    <title>معرض ريري الفني</title>
     <style>
-        body { font-family: 'Tahoma', sans-serif; background: #1a1a2e; color: white; margin: 0; padding: 20px; text-align: center; }
-        h1 { color: #4cc9f0; font-size: 2.5rem; }
-        .gallery { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 20px; margin-top: 30px; }
-        .gallery img { width: 100%; border-radius: 15px; border: 3px solid #4cc9f0; }
+        body { 
+            font-family: 'Tahoma', sans-serif; 
+            background: #1a1a2e; 
+            color: white; 
+            margin: 0; 
+            padding: 20px; 
+            text-align: center; 
+        }
+        h1 { 
+            color: #4cc9f0; 
+            font-size: 2.5rem; 
+        }
+        .gallery { 
+            display: grid; 
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); 
+            gap: 20px; 
+            padding: 20px; 
+        }
+        .gallery img { 
+            width: 100%; 
+            border-radius: 15px; 
+            border: 3px solid #4cc9f0;
+            transition: transform 0.3s;
+        }
+        .gallery-item {
+            transition: transform 0.3s, box-shadow 0.3s;
+            border-radius: 15px;
+            overflow: hidden;
+        }
+        .gallery-item:hover {
+            transform: scale(1.05);
+            box-shadow: 0 0 25px #4cc9f0;
+        }
+        .riri-name {
+            font-size: 20px;
+            font-weight: bold;
+            color: #ff70a6;
+            text-align: center;
+            margin-top: 10px;
+            animation: glow 2s ease-in-out infinite alternate;
+        }
+        @keyframes glow {
+            from { text-shadow: 0 0 10px #ff70a6; }
+            to { text-shadow: 0 0 20px #ff70a6, 0 0 30px #4cc9f0; }
+        }
     </style>
 </head>
 <body>
-    <h1>أهلاً بيكم في معرض ريـ🦋ـري ✨</h1>
+    <h1>أهلاً بيكم في معرض ريري ✨</h1>
     <p>معرض أعمالي وتصميماتي الخاصة</p>
     <div class="gallery">
-              <div class="gallery-item">
+        <div class="gallery-item">
             <img src="img1.jpg" alt="لوحة فراشة 1">
         </div>
         <div class="gallery-item">
             <img src="img2.jpg" alt="لوحة فراشة 2">
         </div>
         <div class="gallery-item">
-            <img src="img3.jpg" alt="لوحة فراشة3>
+            <img src="img3.jpg" alt="لوحة فراشة 3">
         </div>
         <div class="gallery-item">
-    <img src="img4.jpg" alt="ريري المبرمجة 👩‍💻🦋">
-    </div>
-    <div class="gallery-item">
-        <img src="img5.jpg" alt="صورة المبرمجة">
-        <p>ريـ🦋ـري المبرمجة</p>
-    </div>
+            <img src="img4.jpg" alt="ريري المبرمجة 👩‍💻🦋">
+        </div>
+        <div class="gallery-item">
+            <img src="img5.jpg" alt="صورة المبرمجة">
+            <p class="riri-name">ريـ🦋ـري المبرمجة</p>
+        </div>
     </div>
 </body>
-  </html>
+    </html>
